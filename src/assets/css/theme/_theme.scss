@@ -1,0 +1,50 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$theme-primary: mat.define-palette(mat.$teal-palette);
+$theme-accent: mat.define-palette(mat.$teal-palette, A200);
+$theme-warning: mat.define-palette(mat.$red-palette);
+
+$theme: mat.define-light-theme(
+  (
+    50: #fcfefe,
+    100: #e6f9f6,
+    200: #c2f1e9,
+    300: #91e6d7,
+    400: #5edbc4,
+    500: #2ed0b3,
+    600: #00c6a2,
+    700: #00a88a,
+    800: #008d73,
+    900: #00715c,
+    1000: #005949,
+    contrast: (
+      50: #ffffff,
+      100: #f6f6f8,
+      200: #eceef1,
+      300: #dfe3e8,
+      400: #bfc7d2,
+      500: #909fb2,
+      600: #778597,
+      700: #5f6c7b,
+      800: #475462,
+      900: #3d4854,
+      1000: #333c47,
+      1100: #29313a,
+      1200: #20262e,
+      A100: rgb(0, 0, 12, 0.02),
+      A200: rgb(0, 0, 12, 0.04),
+      A300: rgb(0, 0, 12, 0.12),
+      A400: rgb(0, 0, 12, 0.3),
+      A500: rgb(0, 0, 12, 0.5),
+    ),
+    color: (
+      primary: $theme-primary,
+      accent: $theme-accent,
+      warn: $theme-warning,
+    ),
+  )
+);
+
+@include mat.all-component-themes($theme);

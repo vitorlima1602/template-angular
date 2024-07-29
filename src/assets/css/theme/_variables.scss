@@ -1,0 +1,37 @@
+@use "@angular/material" as mat;
+@import "./theme";
+
+$s-green-0: map-get($theme, 50);
+$s-green-1: map-get($theme, 100);
+$s-green-2: map-get($theme, 200);
+$s-green-3: map-get($theme, 300);
+$s-green-4: map-get($theme, 400);
+$s-green-5: map-get($theme, 500);
+$s-green-6: map-get($theme, 600);
+$s-green-7: map-get($theme, 700);
+$s-green-8: map-get($theme, 800);
+$s-green-9: map-get($theme, 900);
+$s-green-10: map-get($theme, 1000);
+
+//Neutral Solid Light
+$neutral-solid-light-contrast: map-get($theme, contrast);
+$neutral-solid-light-0: mat-color($neutral-solid-light-contrast, 50);
+$neutral-solid-light-1: mat-color($neutral-solid-light-contrast, 100);
+$neutral-solid-light-2: mat-color($neutral-solid-light-contrast, 200);
+$neutral-solid-light-3: mat-color($neutral-solid-light-contrast, 300);
+$neutral-solid-light-4: mat-color($neutral-solid-light-contrast, 400);
+$neutral-solid-light-5: mat-color($neutral-solid-light-contrast, 500);
+$neutral-solid-light-6: mat-color($neutral-solid-light-contrast, 600);
+$neutral-solid-light-7: mat-color($neutral-solid-light-contrast, 700);
+$neutral-solid-light-8: mat-color($neutral-solid-light-contrast, 800);
+$neutral-solid-light-9: mat-color($neutral-solid-light-contrast, 900);
+$neutral-solid-light-10: mat-color($neutral-solid-light-contrast, 1000);
+$neutral-solid-light-11: mat-color($neutral-solid-light-contrast, 1100);
+$neutral-solid-light-12: mat-color($neutral-solid-light-contrast, 1200);
+
+//Neutral Alpha Light
+$neutral-alpha-light-1: mat-color($neutral-solid-light-contrast, A100);
+$neutral-alpha-light-2: mat-color($neutral-solid-light-contrast, A200);
+$neutral-alpha-light-3: mat-color($neutral-solid-light-contrast, A300);
+$neutral-alpha-light-4: mat-color($neutral-solid-light-contrast, A400);
+$neutral-alpha-light-5: mat-color($neutral-solid-light-contrast, A500);
