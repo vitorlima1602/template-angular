@@ -1,1 +1,7 @@
-<p>layout works!</p>
+<ng-container>
+    @if (isLogged) {
+        <app-private></app-private>
+    }@else {
+        <app-public></app-public>
+    }
+</ng-container>
